@@ -1,6 +1,12 @@
+html,body{
+    height: 100vh;
+    margin: 0px;
+    background-color: #e0e0e0;
+}
 #container{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    
 }
 
 #logo{
@@ -15,4 +21,35 @@
 #city_img{
     height: 150px;
     width: 150px;
+    padding: 4%;
+}
+header{
+    background-color: rosybrown;
+}
+
+footer{
+    background-color: rosybrown;
+}
+
+#search_bar{
+    height: 380px;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+#city_cards{
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+#city_card_items{
+    display: inline-block;
+    padding: 4%;
+
+}
+#city_card_items img{
+    border-radius: 25%;
 }

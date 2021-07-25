@@ -1,0 +1,18 @@
+
+
+
+div{
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border: 12px solid;
+    border-top-color: #444444 ;
+    border-left-color:#f3f3f3 ;
+    border-right-color: #f3f3f3;
+    border-bottom-color: #f3f3f3;
+    
+
+    border-radius: 50%;
+}
