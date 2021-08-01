@@ -1,13 +1,16 @@
-html,body{
-    height: 100vh;
-    margin: 0px;
-    background-color: #e0e0e0;
-}
+
 #container{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     margin: 0px;
-    
+    color:black;
 }
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
 
 header{
     background-color: rosybrown;

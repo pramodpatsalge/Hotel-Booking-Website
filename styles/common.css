@@ -1,0 +1,90 @@
+html,body{
+    height: 100vh;
+    margin: 0px;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+#container{
+    height:100%;
+    width:100%;
+    margin: 0%;
+    
+}
+
+.header{
+    width: 100%;
+    background-color: rosybrown;
+    position: sticky;
+    top: 0;
+    z-index:+1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header a{
+    display: inline;
+    float: right;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    margin: 0px;   
+}
+  #logo{
+    height: 60px;
+    width: 60px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+  .footer{
+    width: 100%;
+    background-color: rosybrown;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    height:64px;
+  }
+
+  .footer>.contact-us{
+    margin-left:2%;
+    color: black;
+  }
+  .footer>.contact-us>a{
+      text-decoration: none;
+      color: black;
+  }
+  .footer>.social-media>span>a>img{
+    height: 20px;
+    width: 22px;
+    padding: 5px;
+
+  }
+  .social_media_img{
+    height: 20px;
+    width: 22px;
+    display: inline;
+    float: right;
+    vertical-align: middle;
+    margin: 6px;
+}
+
+  .footer>.social-media{
+    margin-right: 2%;
+  }
+  
+  .footer>.copyright>span{
+    font-size: 10px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  

@@ -1,12 +1,9 @@
-html,body{
-    height: 100vh;
-    margin: 0px;
-    background-color: #e0e0e0;
-}
+
 #container{
     height: 100%;
     width: 100%;
     margin: 0px;
+    color:black;
 }
 
 #logo{
@@ -28,10 +25,67 @@ html,body{
     background-color: rgb(132, 136, 139);
     width: 40%;
 }
-header{
-    background-color: rosybrown;
+.content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+    margin-top:2%;
+}
+.list-view>#hotel-list>.image>img, .list-view>a>#hotel-list>.image>img{
+    height:200px;
+    width:250px;
+}
+.content>.list-view>#hotel-list{
+    margin:2%;
+    background-color:lightgray;
+    width:40%;
+    height: 200px;
+}
+.view-option{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
-footer{
-    background-color: rosybrown;
+#hotel-list{
+    margin: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
+}
+.list-view{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#list-view-container{
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 20px;
+  
+
+}
+
+#list-view-items{
+    width: auto;
+}
+
+.map-view{
+    display: none;
+}
+.list-view>#hotel-list, .list-view>a>#hotel-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+     margin: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
+}
+
+.textDiv{
+    text-decoration: none;
+    padding: 3%;
 }

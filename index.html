@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
     <title>Index</title>
-    <link rel="stylesheet" href="styles\index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
          <!--Head div-->
-        <header>
+        <div class="header">
             <img src="assests\images\logo.png" id="logo" alt="logo">
             <a href="login.html" target="_self">Login</a>
-        </header>
+        </div>
         
-        <div>
+        <div class="content">
             <!-- content div-->
-            <div id="search_bar">
-                <input type="search" name="city" id="city" placeholder="City">
-            </div>
+            <div class="search-bar">
+                <form>
+                  <label for="city"></label>
+                  <input type="text" name="city" id="city" placeholder="City">
+                </form>
+              </div>
+
+
             <div id="city_cards">
                 <div id="city_card_items">
                     <a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi" id="city_img" ></a>
@@ -32,27 +39,43 @@
                 </div>
 
             </div>
-            <div>
-                <a href="#">View more >></a>
-            </div>
+           
             
         </div>
-        <!--Footer div -->
-        <footer>
-            <div>
-                <a href="contact.html" target="_self">Contact Us</a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" alt="facebook" id="social_media_img"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" alt="instagram" id="social_media_img"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="assests\images\twitter.png" alt="twitter" id="social_media_img"></a>
-                    
-            </div>
-            <div>
-                &copy; 2020 ROOM SEARCH PVT. LTD
-            </div>
-        </footer>
+        <div class="view_more">
+            <a href="#" >View more >></a>
+        </div>
         
-    </div>
+
+    <div class="footer">
+        <div class="contact-us">
+            <a href="contact.html" target="_self" >Contact Us</a>
+        </div>
+        
+        <div class="copyright">
+          <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
+        </div>
+
+        <div class="social-media">
+          <span>
+            <a href="https://en-gb.facebook.com/login/" target="_blank" class="social_media_img">
+              <img src="assests/images/facebook.png">
+            </a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank" class="social_media_img">
+              <img src="assests/images/instagram.png">
+            </a>
+          </span>
+          <span>
+            <a href="https://twitter.com/LOGIN" target="_blank" class="social_media_img">
+              <img src="assests/images/twitter.png">
+            </a>
+          </span>
+        </div>
+      </div>
+</div>
+    
+
 </body>
 </html>
