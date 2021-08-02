@@ -13,34 +13,74 @@
             <img src="assests\images\logo.png" id="logo" alt="logo">
             <a href="login.html" target="_self">Login</a>
         </div>
-        <div class="content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="hotel_img" alt="Radisson Blu Hotel">
-            
+        <div id="content">
 
-            <form action="payment.html" method="GET" >
-                <label for="NofAdults">Adults:</label>
-                <input type="number" name="NofAdults" id="NofAdults" min="1" value="1">
-                <br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-                <br>
-                <label for="fromDate">From Date</label>
-                <input type="date" name="fromDate" id="fromDate">
-                <br>
-                <label for="toDate"> To Date</label>
-                <input type="date" name="toDate" id="toDate">
-                <br>
-                <label for="total">Total:</label>
-                <input type="text" id="total" name="total" disabled>
-                <br>
-                <input type="submit" value="Book Now">
+            <div id="hotel-image">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+              class="image" id="hotel_img" alt="Radisson Blu Hotel">
+            </div>
+            <div id="form-div">
+              <form action="payment.html" method="GET">
+               
+                <div style="display: flex; flex-direction: row;justify-content: space-between;padding: 10px;">
+                  <div>
+                    <label for="NofAdults">Adults:</label>
+                  </div>
+                  <div>
+                  <input type="number" class="form-item" name="NofAdults" id="NofAdults" min="1" value="1">
+                  </div>
+                </div>
+                
+                <div  style="display: flex; flex-direction: row;justify-content: space-between;padding: 20px;">
+                  <div>
+                    <label for="name">Name:</label>
+                    </div>
+                    <div>
+                  <input type="text" class="form-item" name="name" id="name" required>
+                  </div>
+                </div>
+                
+                <div  style="display: flex; flex-direction: row;justify-content: space-between;padding: 20px;">
+                  <div>
+                    <label for="fromDate">From Date:</label>
+                    </div>
+                    <div>
+                  <input type="date" class="form-item" name="fromDate" id="fromDate">
+                  </div>
+                </div>
+                
+                <div  style="display: flex; flex-direction: row;justify-content: space-between;padding: 20px;">
+                  <div>
+                    <label for="toDate"> To Date:</label>
+                    </div>
+                    <div>
+                    <input type="date" class="form-item" name="toDate" id="toDate">
+                    </div>
+                </div>
+
+                <div  style="display: flex; flex-direction: row;justify-content: space-between;padding: 20px;">
+                  <div>
+                    <label for="total">Total:</label>
+                    </div>
+                    <div>
+                    <input type="text" class="form-item"  id="total" name="total" disabled>
+                    </div>
+                </div>
+                
+                <div style="display: flex; flex-direction: row;justify-content: space-between;padding: 20px;">
+                  <div></div>
+                  <div>
+                    <input type="submit" value="Book Now">
+                  </div>
+                </div>
             </form>
-
+          </div>
+        </div>   
             <div id="hotel-description">
                 <h2>Radisson Blu Hotel</h2>
             <P>RATING</P>
             <p>5 Star</p>
-            <p>AMENITIES</p>
+            <h5>AMENITIES</h5>
             <ul>
                 <li>Room Service</li>
                 <li>Restaurant</li>
@@ -54,10 +94,10 @@
             <p>this is raddison blue hotel Description this is raddison blue hotel Description this is raddison blue hotel Description this is raddison blue hotel Description this is raddison blue hotel Description 
                 this is raddison blue hotel Description this is raddison blue hotel Description this is raddison blue hotel Description 
                 
-                
             </p>
         </div>
-        </div>
+        <br><br>
+        <br><br>
         <div class="footer">
             <div class="contact-us">
                 <a href="contact.html" target="_self" >Contact Us</a>

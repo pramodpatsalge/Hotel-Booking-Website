@@ -29,37 +29,63 @@ footer{
     height: 20px;
     width: 22px;
 }
-#hotel_img{
-    width: 500px;
-    height: 500px;
-    
-}
-#hotel{
-    background-color: rgb(132, 136, 139);
-    width: 50%;
-    height: 20%;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    */
-    margin: 2% auto 2% auto ;
-}
 
-#customer-detail{
-    margin: 2%;
-}
-#tarrif{
-    margin: 2%;
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+  .mainDiv{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    background-color: rgb(132, 136, 139);
+    margin-bottom: 4%;
+    margin-top: 4%;
+    
+  }
+  .content>.mainDiv>.image>img{
+    height: 200px;
+    width: 250px;
+    max-height: 300px;
+    max-width: 270px;
+  }
+  .content>.mainDiv>.text{
+    padding-left:4% ;
+  }
+  .mainDiv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 1% 2% 1% 2%;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rosybrown;
+    margin-bottom: 4%;
+  }
+  input{
+      background-color: rosybrown;
+      text-decoration: none;
+  }
+  
+.button {
+  background-color: rosybrown; /* Green */
+  border: none;
+  color: black;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 
-    /*
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    */
 }
