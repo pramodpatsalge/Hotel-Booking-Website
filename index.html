@@ -5,23 +5,30 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="container">
          <!--Head div-->
-        <div class="header">
-            <img src="assests\images\logo.png" id="logo" alt="logo">
-            <a href="login.html" target="_self" style="margin-right: 1%;">Login</a>
-        </div>
+         <div class="header">
+          <div id="h1"><img class="header-logo" src="assests/images/logo.png" alt="logo"></div>
+          <div id="h2">
+            <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#staticBackdrop">
+              LOGIN
+            </button>
+          </div>
+        </div> 
         
         <div class="content">
             <!-- content div-->
             <div class="search-bar">
-                <form>
-                  <label for="city"></label>
-                  <input type="text" name="city" id="city" placeholder="City">
-                </form>
-              </div>
+              <form>
+                <label for="city"></label>
+                <input type="text" name="city" style="width: 160%;" id="city" placeholder="City">
+              </form>
+            </div>
 
 
         <div class="city-images">
@@ -52,41 +59,71 @@
                 </div>
             </div>
         </div>
-           
-            
-        </div>
-        <div class="view_more">
-            <a href="#" >View more >></a>
-        </div>
-        
 
-    <div class="footer">
-        <div class="contact-us">
-            <a href="contact.html" target="_self" >Contact Us</a>
-        </div>
-        
-        <div class="copyright">
-          <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
-
-        <div class="social-media">
-          <span>
-            <a href="https://en-gb.facebook.com/login/" target="_blank" class="social_media_img">
-              <img src="assests/images/facebook.png">
-            </a>
-          </span>
-          <span>
-            <a href="https://www.instagram.com/accounts/login/" target="_blank" class="social_media_img">
-              <img src="assests/images/instagram.png">
-            </a>
-          </span>
-          <span>
-            <a href="https://twitter.com/LOGIN" target="_blank" class="social_media_img">
-              <img src="assests/images/twitter.png">
-            </a>
-          </span>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Please login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="username" class="col-sm-2 col-form-label">Username:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="username" required autocomplete="on" placeholder="Enter Username">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword" required placeholder="Enter Password">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer" style="display: flex; justify-content: center;">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
+      <div class="view-more">
+        <a href="index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">View More</a>
+        </div>
+      <br><br><br><br>
+    <div class="footer">
+            <div class="contact-us">
+              <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">Contact Us</button>
+            </div>
+            
+            <div class="copyright">
+              <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
+            </div>
+
+            <div class="social-media">
+              <span>
+                <a href="https://en-gb.facebook.com/login/" target="_blank">
+                  <img src="assests/images/facebook.png">
+                </a>
+              </span>
+              <span>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                  <img src="assests/images/instagram.png">
+                </a>
+              </span>
+              <span>
+                <a href="https://twitter.com/LOGIN" target="_blank">
+                  <img src="assests/images/twitter.png">
+                </a>
+              </span>
+            </div>
+          </div>
 </div>
     
 

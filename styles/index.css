@@ -30,46 +30,8 @@ input:focus{
     width: 150px;
     padding: 4%;
 }
-.header{
-    background-color: rosybrown;
-    position: fixed;
-    width: 100%;
-}
 
 
-footer{
-    background-color: rosybrown;
-    padding: 5px;
-    
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    
-    background-color: rosybrown;
-    padding: 5px;
-    text-align: center;
- }
-.footer>.contact_us{
-    margin-left:2%;
-}
-#city_cards{
-    margin-left: 15%;
-    margin-right: 15%;
-    
-}
-
-#city_card_items{
-    display: inline-block;
-    padding: 4%;
-
-}
-#city_card_items img{
-    border-radius: 25%;
-}
 .city-images{
     padding-top: 4%;
     padding-bottom: 4%; 
@@ -118,11 +80,8 @@ footer{
     left: 0px;
 }
 
-.view_more{
-    height: 100px;
+.view-more{
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
-}
-.view_more a{
-    text-decoration: none;
-    color: black;
 }

@@ -14,26 +14,33 @@ html,body{
 }
 
 .header{
-    width: 100%;
-    background-color: rosybrown;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header a{
-    display: inline;
-    float: right;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    margin: 0px;   
+  width: 100%;
+  background-color: rosybrown;
+  position: sticky;
+  top: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header>#h1>img{
+  height: 60px;
+  width:60px;
+}
+.header>#h1>a>img{
+  height: 60px;
+  width:60px;
 }
   #logo{
     height: 60px;
     width: 60px;
     margin-left: 1px;
+}
+.header>#h1{
+  margin-left: 1%;
+}
+.header>#h2{
+  margin-right:2%;
 }
 
 .content{
@@ -43,48 +50,50 @@ html,body{
     margin-bottom: 5%;
 }
 
-  .footer{
-    width: 100%;
-    background-color: rosybrown;
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0px;
-    height:64px;
-  }
-
-  .footer>.contact-us{
-    margin-left:2%;
-    color: black;
-  }
-  .footer>.contact-us>a{
-      text-decoration: none;
-      color: black;
-  }
-  .footer>.social-media>span>a>img{
-    height: 20px;
-    width: 22px;
-    padding: 5px;
-
-  }
-  .social_media_img{
-    height: 20px;
-    width: 22px;
-    display: inline;
-    float: right;
-    vertical-align: middle;
-    margin: 6px;
+.footer{
+  width: 100%;
+  background-color: rosybrown;
+  position: fixed;
+  bottom: 0px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  height:64px;
+}
+.footer>.social-media>span>a>img{
+  height: 20px;
+  width: 22px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
-  .footer>.social-media{
-    margin-right: 2%;
-  }
-  
-  .footer>.copyright>span{
-    font-size: 10px;
-    vertical-align: middle;
-    text-align: center;
-  }
-  
+.footer>.social-media{
+  margin-right: 2%;
+}
+.footer>.contact-us{
+  margin-left:2%;
+}
+.footer>.copyright>span{
+  font-size: 10px;
+}
+.loaderDiv{
+  position: relative;
+  display: none;
+}
+.loaderDiv>iframe{
+  width: 100%;
+  align-self: center;
+}
+  /*
+.social_media_img{
+  height: 20px;
+  width: 22px;
+  display: inline;
+  float: right;
+  vertical-align: middle;
+  margin: 6px;
+}*/
