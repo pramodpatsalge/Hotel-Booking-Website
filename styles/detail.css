@@ -1,85 +1,153 @@
-#content{
-    display: flex;
-    flex-wrap: nowrap;
-    max-height: 400px;
-    border:1px solid black;
-    
-}
-.image{
+.mainDiv{
+    margin-left: 4% !important;
+    margin-right: 4% !important;
+    margin-top: 20%;
+    margin-bottom: 2%;
+  }
+  
+  .imgDiv{
+  
+    border: 1px solid black
+  }
+  
+  .formDiv{
+  
+  
+  padding: 20px; 
+  border-left: 1px; 
+  border-top: 1px;
+  border-right: 1px; 
+  border-bottom: 1px; 
+  border-style: solid;
+  border-color: black;
+  
+  }
+  
+  .listSty{
+    display: flex; 
+    padding: 1em;
+  }
+  .labelSty{
+   flex:1;
+  }
+  .inputSty{
+   width:60%;
+  }
+  
+  .header{
+      z-index: 1;
+  }
+  
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-image: none !important;
+  margin-top: 29%;
+  }
+  .carousel-control-next-icon:after
+  {
+  content: '>';
+  font-size: 55px;
+  color: rosybrown; 
+  
+  }
+  
+  .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rosybrown;
+  
+  }
+  
+  .carousel-control-next,
+  .carousel-control-prev {
+    z-index: 0;
+  
+  }
+  .carousel-image {
+    max-height: 370px;
+  }
+  
+  
+  
+  .image{
     margin-top: 5%;
     margin-left: 1%;
     margin-bottom: 5%;
     width: 100%;
     height: 2hvh;
   }
-#hotel-image{
-    display: inline;
-    width: 75%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15%;
-    border-right: 1px solid black;
-}
-#hotel-image>img{
-    max-height: 350px;
-    margin: auto auto;
-    
-    justify-content: center;
-    
-}
-#form-div{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap:  wrap;
-    
-}
-
-h5{
-    font-family: cursive;
-}
-#container{
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    color:black;
-    
-}
-
-#logo {
-    height: 60px;
-    width: 60px;
-}
-
-#social_media_img{
-    height: 20px;
-    width: 22px;
-}
-
-#hotel_img{
-    width: 500px;
-    height: 500px;
-    margin:2% 4% 0% 4% ;
-    
-}
-form{
-    margin: 0% 4% 1% 4%;
-}
-#hotel-description{
-    margin: 1% 4% 2% 4%;
-    
-}
-header{
-    background-color: rosybrown;
-}
-
-footer{
-    background-color: rosybrown;
-}
-#hotel-details{
-    margin-right: 4%;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-bottom: ;
-}
+  @media only screen and (min-width: 800px){
+    .image{
+        width: 50%;
+        margin-left: 25%;
+        height: 450px;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      margin-top: 23%;
+    }
+  
+    .mainDiv{
+        margin-top: 7%;
+    }
+  } 
+  @media screen and (max-width: 576px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: auto;
+    }
+    .mainDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        background-color: rgb(132, 136, 139);
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+    .content>.mainDiv>.text{
+        padding:4% ;
+    }
+    .mainDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color: rosybrown;
+        margin-bottom: 4%;
+    }
+    .pay{
+        align-self: center;
+        padding:2%;
+    }
+    .image, .detailDiv, .amount-details{
+        padding: 2%;
+    }
+  
+    @media screen and (min-width: 576px) and (max-width:768px){
+        .mainDiv{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: auto;
+            background-color: rgb(132, 136, 139);
+            margin-bottom: 4%;
+            
+        }
+    }
+  }
