@@ -20,14 +20,7 @@
   </head>
   <body >
     <div id="container">
-      <div class="header">
-        <div id="h1"><img class="header-logo" src="assests/images/logo.png" alt="logo"></div>
-        <div id="h2">
-          <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#staticBackdrop">
-            LOGIN
-          </button>
-        </div>
-      </div> 
+      <header class="header-footer" id="header"></header>
 
     <div class="content" style="background-color:#e0e0e0 ;">
 
@@ -81,7 +74,7 @@
             <ul style="list-style-type: none;">
               <li class="listSty">
                 <label class="labelSty" for="adult">Adults:</label>
-                <input class="inputSty" id="adults" type="number" id="adult" onfocus="call()" onchange="call()" name="adult" min="1" required autocomplete="off"
+                <input class="inputSty" id="adults" type="number" id="adult" oninput="updatePrice()" name="adult" min="1" required autocomplete="off"
                   value="1"><br />
               </li>
 
@@ -92,12 +85,12 @@
 
               <li class="listSty">
                 <label class="labelSty" for="date1">From Date:</label>
-                <input class="inputSty"   type="date" id="fromDate" name="date1" onchange="call()" required autocomplete="off" /><br />
+                <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required />
               </li>
 
               <li class="listSty">
                 <label class="labelSty" for="date2">To Date:</label>
-                <input class="inputSty toDate" type="date" name="date2" id="toDate" onchange="call()" required autocomplete="off" /><br />
+                <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required />
               </li>
 
               <li class="listSty">
@@ -145,34 +138,9 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="contact-us">
-        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">Contact Us</button>
-      </div>
-      
-      <div class="copyright">
-        <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
-      </div>
-
-      <div class="social-media">
-        <span>
-          <a href="https://en-gb.facebook.com/login/" target="_blank">
-            <img src="assests/images/facebook.png">
-          </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com/accounts/login/" target="_blank">
-            <img src="assests/images/instagram.png">
-          </a>
-        </span>
-        <span>
-          <a href="https://twitter.com/LOGIN" target="_blank">
-            <img src="assests/images/twitter.png">
-          </a>
-        </span>
-      </div>
-    </div>
-
+    <footer class="header-footer" id="footer"></footer>
   </div>
+  <script src="scripts/common.js"></script>
+  <script src="scripts/detail.js"></script>
   </body>
 </html> 

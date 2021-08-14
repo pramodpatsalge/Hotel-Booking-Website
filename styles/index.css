@@ -44,6 +44,20 @@ input:focus{
     display: flex;
     justify-content: space-around;
 }
+.city-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0%;
+}
+.city-type{
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+}
+#view-more-city-cards {
+    display: none;
+}
 .images{
     position: relative;
 }
@@ -86,10 +100,10 @@ input:focus{
     left: 0px;
 }
 
-.view-more{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    text-align: center;
+#view-more {
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
 }
 @media screen and (max-width:576px){
     .city-images>div>img, .city-images>div>a>img{
