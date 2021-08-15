@@ -13,33 +13,35 @@
 <body >
     <div id="container">
       <header class="header-footer" id="header"></header>
-        <div class="content">
-          <div class="mainDiv">
-            <div class="image"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></div>
-            <div class="text">
-              <h2>Radisson Blu Hotel</h2>
-              <p>#38 of 1,289 hotels in New Delhi</p>
-              <p>National Highway 8, New Delhi, 110017, India</p>
-            </div>   
-          </div>  
-          <div class="mainDiv2">
-            <div class="detailDiv">
-                <p><span style="font-family: cursive;"><b>Name:</b></span> John Doe</p>
-                <p><span style="font-family: cursive;"><b>Number of Adults:</b></span> 2</p>
-                <p><span style="font-family: cursive;"><b>Check-in-Date:</b></span> 06/06/2020</p>
-                <p><span style="font-family: cursive;"><b>Check-out-Date:</b></span> 08/06/2020</p>
+
+        <!-- Content -->
+        <div id="payment-container">
+            <div id="hotel-details">
+                <img class="hotel-image" id="hotel-image" alt="hotel-image">
+                <div class="hotel-name-rating">
+                    <h2 id="hotel-name"></h2>
+                    <p id="ranking"></p>
+                    <p id="address"></p>
+                </div>
             </div>
-            <div class="amount-details">
-                <p><span style="font-family: cursive;"><b>Tarrif Breakdown:</b></span> Rs.1000 x 2 Adults x 5 Nights</p>
-                <p><span style="font-family: cursive;"><b>Total Amout:</b></span> Rs. 10,000</p>
+            <div id="customer-payment-details">
+                <div id="customer-details">
+                    <p id="name"></p>
+                    <p id="adult"></p>
+                    <p id="from-date"></p>
+                    <p id="to-date"></p>
+                </div>
+                <div id="payment-details">
+                    <p id="tariff"></p>
+                    <p id="amount"></p>
+                </div>
+                <a href="#" id="pay-now">
+                    <button id="pay-now-button" type="button" class="btn btn-success" onclick="payNow(event)">Pay
+                        Now</button>
+                </a>
             </div>
-            <a href="#" id="pay-now">
-              <button id="pay-now-button" type="button" class="btn btn-success" onclick="payNow(event)">Pay
-                  Now</button>
-          </a>
-          </div>   
-            <br><br><br><br><br><br>
         </div>
+        <!-- Footer -->
         <footer class="header-footer" id="footer"></footer>
         <!--Modal for login-->
 
