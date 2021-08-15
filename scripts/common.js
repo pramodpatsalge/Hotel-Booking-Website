@@ -1,5 +1,18 @@
+let disableLoader = () => {
+    document.getElementById("loader").style.visibility = "hidden";
+    document.getElementsByTagName("body")[0].style.visibility = "visible";
+}
+
+let displayLoader = () => {
+    document.getElementsByTagName("body")[0].style.visibility = "hidden";
+    document.getElementById("loader").style.visibility = "visible";
+}
+
+
+
+// The header template
 let displayHeaderTemplate = () => {
-    let headerTemplate = `<a href="index.html" class="logo">
+    let headerTemplate = `<a href="index.html" class="">
         <img src="assests/images/logo.png" id="logo-image" alt="logo"/>
     </a>
     <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal" onclick="mainLogin(event)">LOGIN</button>
@@ -35,6 +48,7 @@ let displayHeaderTemplate = () => {
     document.getElementById('header').innerHTML += headerTemplate;
 };
 
+// The footer template
 let displayFooterTemplate = () => {
     let footerTemplate = `<div id="contact">
         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-backdrop="false" data-target="#contact-modal">Contact Us</button>
@@ -83,8 +97,11 @@ let displayFooterTemplate = () => {
     document.getElementById('footer').innerHTML += footerTemplate;
 };
 
+
+
 displayHeaderTemplate();
 displayFooterTemplate();
+
 let mainLogin = e => {
     if (localStorage.getItem('isLogin') === 'true') {
         localStorage.setItem('isLogin', 'false');

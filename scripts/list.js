@@ -3,6 +3,28 @@ const API_URL = "https://travel-advisor.p.rapidapi.com/";
 const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
 const travelAdvisorKey = "72939faa2emshce0e41cd4c23c9bp1cf228jsn2dc095c76b4a";
 
+let initMap = locations => {
+    let center = { lat: parseFloat(locations[0][1]), lng: parseFloat(locations[0][2]) };
+    let map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: center
+    });
+    let infoWindow = new google.maps.InfoWindow({});
+    let marker, count;
+    for (count = 0; count < locations.length; count++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+            map: map,
+            title: locations[count][0]
+        });
+        google.maps.event.addListener(marker, 'click', ((marker, count) => {
+            return function () {
+                infoWindow.setContent(locations[count][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, count));
+    }
+}
 let initList = hotelList => {
     let hotelListElement = document.getElementById('hotel-list');
     hotelList.forEach(hotel => {
